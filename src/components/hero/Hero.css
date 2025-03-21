@@ -1,0 +1,145 @@
+
+
+  
+.heroSlider01  .swiper {
+    width: 100%;
+    height: 100%;
+  margin-bottom: 30px;
+  }
+  
+ .heroSlider01 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #f0f2f3; */
+    background-color: transparent !important;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ .heroSlider01 .swiper-slide img {
+    display: block; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+ .heroSlider01 .autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+  
+ .heroSlider01 .autoplay-progress svg {
+  
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+  
+  .home {
+    background-color: #f0f2f3;
+  }
+  .home_cards {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 10px 0;
+    
+  }
+  
+  .home_card {
+    width: 600px;
+  
+    text-align: left;
+  }
+  .home_card h1 {
+    font-size: 60px;
+    padding: 20px 0;
+  }
+  
+  .home_card button {
+    padding: 8px 15px;
+    background-color: #029fae;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #029fae;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .home_imgs {
+    width: 350px;
+    height: 440px;
+    display: flex;
+    align-items: start;
+  }
+  .home_imgs img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .home_foyiz {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 300px;
+    background-color: white;
+  }
+  
+  .home_foyiz span{
+      font-size: 25px;
+      color: #F05C52;
+  }
+  .swiper-button-prev{
+    background-color: rgb(0, 136, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .swiper-button-prev::after{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+  }
+  .swiper-button-next{
+    background-color: rgb(0, 136, 255);
+    width: 50px;
+    height: 50px;
+  
+    border-radius: 50%;
+  
+  }
+  .swiper-button-next::after{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+  }
